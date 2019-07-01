@@ -1,0 +1,29 @@
+{
+  "name": "aria-label-prop-type",
+  "version": "0.0.1",
+  "description": "A prop type for aria-label and accessibilityLabel that accepts either a string, or a string child somewhere in children",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariabuckles/aria-label-prop-type.git"
+  },
+  "keywords": [
+    "react",
+    "accessibility",
+    "aria",
+    "label",
+    "proptypes"
+  ],
+  "author": "Aria Buckles (https://github.com/ariabuckles)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ariabuckles/aria-label-prop-type/issues"
+  },
+  "homepage": "https://github.com/ariabuckles/aria-label-prop-type#readme",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ]
+}
