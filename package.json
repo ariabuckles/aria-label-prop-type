@@ -31,6 +31,9 @@
     "README.md",
     "LICENSE"
   ],
+  "peerDependencies": {
+    "react": ">=16.0.0"
+  },
   "devDependencies": {
     "es-check": "^5.0.0",
     "jest": "^24.8.0",
