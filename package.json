@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "A prop type for aria-label and accessibilityLabel that accepts either a string, or a string child somewhere in children",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "prepare": "es-check es5 index.js",
+    "format": "prettier --write *.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ariabuckles/aria-label-prop-type.git"
@@ -25,5 +28,9 @@
     "index.js",
     "README.md",
     "LICENSE"
-  ]
+  ],
+  "devDependencies": {
+    "es-check": "^5.0.0",
+    "prettier": "^1.18.2"
+  }
 }
