@@ -28,6 +28,7 @@
   "homepage": "https://github.com/ariabuckles/aria-label-prop-type#readme",
   "files": [
     "index.js",
+    "aria-label-prop-type.*.js",
     "README.md",
     "LICENSE"
   ],
