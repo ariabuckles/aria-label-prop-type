@@ -4,7 +4,7 @@
   "description": "A prop type for aria-label and accessibilityLabel that accepts either a string, or a string child somewhere in children",
   "main": "index.js",
   "scripts": {
-    "check": "es-check es5 index.js",
+    "check": "es-check es5 index.js aria-label-prop-type.*.js",
     "format": "prettier --write *.js",
     "test": "jest",
     "prepare": "npm run check && npm run test"
@@ -36,9 +36,9 @@
     "react": ">=16.0.0"
   },
   "devDependencies": {
-    "es-check": "^5.0.0",
-    "jest": "^24.8.0",
-    "prettier": "^1.18.2",
-    "react": "^16.8.6"
+    "es-check": "^5.2.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "react": "^16.14.0"
   }
 }

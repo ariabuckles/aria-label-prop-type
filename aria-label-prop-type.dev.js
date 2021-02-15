@@ -1,7 +1,7 @@
 var React = require('react');
 
-var deepTraverseChildren = function(children, callback) {
-    React.Children.forEach(children, function(child) {
+var deepTraverseChildren = function (children, callback) {
+    React.Children.forEach(children, function (child) {
         if (!child) {
             return;
         }
@@ -12,7 +12,7 @@ var deepTraverseChildren = function(children, callback) {
     });
 };
 
-var _accessibilityLabel = function(
+var _accessibilityLabel = function (
     props,
     propName,
     componentName,
@@ -29,7 +29,7 @@ var _accessibilityLabel = function(
             ? props.children(renderPropDefault)
             : props.children;
 
-    deepTraverseChildren(children, function(child) {
+    deepTraverseChildren(children, function (child) {
         if (typeof child === 'string') {
             hasStringChild = true;
         }
@@ -49,13 +49,13 @@ var _accessibilityLabel = function(
     );
 };
 
-var accessibilityLabel = function(props, propName, componentName) {
+var accessibilityLabel = function (props, propName, componentName) {
     return _accessibilityLabel(props, propName, componentName);
 };
 accessibilityLabel.isRequired = accessibilityLabel;
 
-accessibilityLabel.renderPropDefault = function(renderPropDefault) {
-    var propType = function(props, propName, componentName) {
+accessibilityLabel.renderPropDefault = function (renderPropDefault) {
+    var propType = function (props, propName, componentName) {
         return _accessibilityLabel(
             props,
             propName,
